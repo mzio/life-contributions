@@ -1,0 +1,7 @@
+{'categories': [
+	{'<category_name': {'colors': ['<color1>', '<color2>'],
+		            'subcategories1': [
+				    {'<category_name>': { ... }
+			    ],},
+	}
+}
