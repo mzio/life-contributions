@@ -17,7 +17,7 @@ eol = 2 * ' '  # Markdown end-of-line i.e. 2 spaces
 # Actually create and write to file
 with open('{}{}'.format(args.dir, fname), 'w') as f:
     # Starter markdown to be edited
-    f.write('Weekly Commits for {}{}\n\n'.format(
+    f.write('# Weekly Commits for {}{}\n\n'.format(
         start_date.strftime('%D'), eol))
     f.write('## ' + start_date.strftime('%-m/%-d') + eol + '\n\n')
     f.write('### Sample header - change this!' + eol + '\n')
