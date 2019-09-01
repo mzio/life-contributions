@@ -19,7 +19,7 @@ with open('{}{}'.format(args.dir, fname), 'w') as f:
     # Starter markdown to be edited
     f.write('# Weekly Commits for {}{}\n\n'.format(
         start_date.strftime('%D'), eol))
-    f.write('## ' + start_date.strftime('%-m/%-d') + eol + '\n\n')
+    f.write('## ' + start_date.strftime('%-m/%-d/%y') + eol + '\n\n')
     f.write('### Sample header - change this!' + eol + '\n')
     f.write('Write logs or other notes here. Use ### for organizational sectioning.' + eol + '\n')
     f.write('* To render markdown lists, use asterisks like this.' + eol + '\n\n')
@@ -32,6 +32,6 @@ with open('{}{}'.format(args.dir, fname), 'w') as f:
 
     for i in range(1, 7):
         f.write('## ' + (start_date + timedelta(days=i)
-                         ).strftime('%-m/%-d') + eol + '\n\n')
+                         ).strftime('%-m/%-d/%y') + eol + '\n\n')
 
     f.write('Other settings (like categories and their colors) can be found and edited in config.json.')
